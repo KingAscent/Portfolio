@@ -1,5 +1,30 @@
 body {
     margin: 0;
-    background: url("Gradient Blue Dark Bottom Corners.jpg");
+    background-image: url("Gradient Blue Dark Bottom Corners.jpg");
     text-align: center;
 }
+
+/* Sparkle animation */
+.screen-sparkles {
+    position: fixed;
+    display: block;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    margin-left: -40%;
+    width: 80%;
+    height: 100%;
+    background-image: url(Sparkles-1.png), url(Sparkles-2.png);
+    border-radius: 50em;
+    animation: sparkles 15s linear infinite;
+    -webkit-animation: sparkles 15s linear infinite;
+  }
+  
+  @keyframes sparkles {
+    0% {
+      background-position: 0 0, 0 0;
+    }
+    100% {
+      background-position: -150px -300px, 150px -300px;
+    }
+  }
