@@ -1,11 +1,12 @@
 body {
-    margin: 0;
-    background-image: url("Gradient Blue Dark Bottom Corners.jpg");
+    margin: 10;
+    background-image: url(src/Gradient-Blue-Dark-Bottom.jpg);
     text-align: center;
 }
 
 /* Sparkle animation */
 .screen-sparkles {
+    z-index: -1; /* Index of -1 so that the user can click text */
     position: fixed;
     display: block;
     content: "";
@@ -14,12 +15,12 @@ body {
     margin-left: -40%;
     width: 80%;
     height: 100%;
-    background-image: url(Sparkles-1.png), url(Sparkles-2.png);
+    background-image: url(src/Sparkles-1.png), url(src/Sparkles-2.png);
     border-radius: 50em;
     animation: sparkles 15s linear infinite;
     -webkit-animation: sparkles 15s linear infinite;
   }
-  
+
   @keyframes sparkles {
     0% {
       background-position: 0 0, 0 0;
