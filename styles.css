@@ -1,31 +1,74 @@
 body {
-    margin: 10;
+  /* Things that will be displayed on every page */
     background-image: url(src/Gradient-Blue-Dark-Bottom.jpg);
-    text-align: center;
+}
+
+/* Header Links Style*/
+a {
+  color: #ffbb00;
+  text-decoration: none;
+}
+
+/* Header Style */
+.header {
+  text-align: left;
+  left: 80px;
+  top: 20px;
+  position: relative;
+}
+
+a.padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Header GitHub Avatar Style*/
+.picture {
+  position: absolute;
+  margin: 15;
+  border-radius: 100%;
+  width: 50px;
+  transition: transform .7s ease-in-out;
+}
+
+img:hover{
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+
+/* Home page setup */
+.home{
+  margin: 10;
+  text-align: center;
+}
+
+/* About me page setup */
+.about-me {
+  margin: 50;
+  text-align: right;
 }
 
 /* Sparkle animation */
 .screen-sparkles {
-    z-index: -1; /* Index of -1 so that the user can click text */
-    position: fixed;
-    display: block;
-    content: "";
-    left: 50%;
-    bottom: 0;
-    margin-left: -40%;
-    width: 80%;
-    height: 100%;
-    background-image: url(src/Sparkles-1.png), url(src/Sparkles-2.png);
-    border-radius: 50em;
-    animation: sparkles 15s linear infinite;
-    -webkit-animation: sparkles 15s linear infinite;
-  }
+  z-index: -1; /* Index of -1 so that the user can click text */
+  position: fixed;
+  display: block;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  margin-left: -40%;
+  width: 80%;
+  height: 100%;
+  background-image: url(src/Sparkles-1.png), url(src/Sparkles-2.png);
+  border-radius: 50em;
+  animation: sparkles 15s linear infinite;
+  -webkit-animation: sparkles 15s linear infinite;
+}
 
-  @keyframes sparkles {
-    0% {
-      background-position: 0 0, 0 0;
-    }
-    100% {
-      background-position: -150px -300px, 150px -300px;
-    }
+@keyframes sparkles {
+  0% {
+    background-position: 0 0, 0 0;
   }
+  100% {
+    background-position: -150px -300px, 150px -300px;
+  }
+}
