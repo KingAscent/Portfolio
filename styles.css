@@ -13,8 +13,8 @@ a {
 .header {
   text-align: left;
   left: 80px;
-  top: 20px;
-  position: relative;
+  top: 11px;
+  position: fixed;
 }
 
 a.padding {
@@ -24,23 +24,25 @@ a.padding {
 
 /* Header GitHub Avatar Style*/
 .picture {
-  position: absolute;
   margin: 15;
   border-radius: 100%;
   width: 50px;
   transition: transform .7s ease-in-out;
 }
 
-img:hover{
+img:hover {
   transform: rotate3d(0, 1, 0, 360deg);
 }
 
 /* Home page setup */
-.home{
-  margin: 10;
+.home {
   text-align: center;
 }
 
+.footer {
+  margin-bottom: 50px;
+  align-items: center;
+}
 /* About me page setup */
 .about-me {
   margin: 50;
