@@ -1,20 +1,22 @@
 body {
   /* Things that will be displayed on every page */
     background-image: url(src/Gradient-Blue-Dark-Bottom.jpg);
+    background-attachment: fixed;
+    color: #ffe581;
 }
 
 /* Header Links Style*/
 a {
-  color: #ffbb00;
+  color: #ffe581;
   text-decoration: none;
 }
 
 /* Header Style */
 .header {
   text-align: left;
-  left: 80px;
+  left: 85px;
   top: 11px;
-  position: fixed;
+  position: absolute;
 }
 
 a.padding {
@@ -23,7 +25,7 @@ a.padding {
 }
 
 /* Header GitHub Avatar Style*/
-.picture {
+.header-picture {
   margin: 15;
   border-radius: 100%;
   width: 50px;
@@ -39,14 +41,105 @@ img:hover {
   text-align: center;
 }
 
-.footer {
-  margin-bottom: 50px;
-  align-items: center;
+/* Home page center picture setup */
+.home-picture {
+  margin: 15;
+  border-radius: 100%;
+  width: 200px;
+  transition-delay: 250ms;
+  transition: transform 1.5s ease-in-out;
 }
+
+/* Spin the Home Page image */
+img:hover.home-picture {
+  transform: rotate(360deg);
+}
+
 /* About me page setup */
 .about-me {
-  margin: 50;
-  text-align: right;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* About me page title */
+.about-me-header {
+  text-align: center;
+}
+
+.experience {
+  text-align: center;
+}
+
+/* Adjust all images on Experience page to 50x50 */
+#experience-images {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+#experience-divider {
+  display: flex;
+}
+
+#experience-left {
+  text-align: left;
+  flex: 0 0 50%;
+}
+
+#experience-right {
+  text-align: left;
+  flex: 1;
+}
+
+#software-program-images {
+  height: 40px;
+  width: auto;
+  transition: transform 0.7s ease-in;
+}
+
+/* Portfolio Page Style */
+.portfolio {
+  text-align: center;
+}
+
+#portfolio-content {
+  text-align: left;
+}
+
+#portfolio-divider {
+  display: flex;
+}
+
+#portfolio-left {
+  text-align: left;
+  flex: 0 0 50%;
+}
+
+#portfolio-right {
+  text-align: left;
+  flex: 1;
+}
+
+#portfolio-images {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Footer Style*/
+.footer {
+  text-align: center;
+  position: relative;
+  width: 99%;
+  bottom: 0%;
+}
+
+/* Footer Pictures*/
+.footer-picture {
+  width: 50px;
+  transition: transform .7s ease-in-out;
 }
 
 /* Sparkle animation */

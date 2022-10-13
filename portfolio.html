@@ -13,13 +13,17 @@
 </head>
 
 <body>
-    <a href="index.html">
-        <img class="picture" src="https://avatars.githubusercontent.com/u/86906764?v=4"></img>
-    </a>
+    <!--Page Header-->
+    <div>
+        <a href="index.html">
+            <img class="header-picture" src="https://avatars.githubusercontent.com/u/86906764?v=4"></img>
+        </a>
+    </div>
 
     <div class="header">
         <h1>
             <font size="6">
+                <a class="padding" href="index.html">Home</a>
                 <a class="padding" href="about.html">About</a>
                 <a class="padding" href="experience.html">Experience</a>
                 <a class="padding" href="portfolio.html">Portfolio</a>
@@ -27,11 +31,83 @@
         </h1>
     </div>
 
-    <div  class="home">
-        <h1 style="color: #ffbb00">Portfolio</h1>
-        <p style="color: #ffbb00">Mid 1</p>
-        <p style="color: #ffbb00">Mid 2</p>
-        <p style="color: #ffbb00">Bottom Text</p>
+    <!--Page Content-->
+    <div class="portfolio" style="margin-bottom: 14%">
+        <h1>Portfolio</h1>
+        <div id="portfolio-divider">
+            <!--Left Side of Portfolio Page-->
+            <div id="portfolio-left">
+                <p style="margin: 1% 1% 1% 55%">
+                    <font size="5">
+                        Personal
+                    </font>
+                </p>
+                <p id="portfolio-content" style="border-width:2px; border-style:solid; border-color: #ffe581; margin: 1% 1% 1% 25%; padding: .8em">
+                    <font size="4">
+                        <a href="https://github.com/KingAscent/CodingBat" target="_blank">
+                            <img id="portfolio-images" style="vertical-align:middle" src="src/GitHub-Logo-64x64.png"></img>
+                        </a>
+                        CodingBat Solutions | Sept. 2022 - Present
+                        <br>
+                        • A repository of solutions for the coding practice website CodingBat (click <a href="https://codingbat.com/java">here</a>
+                        to open CodingBat in a new tab).
+                        <br>
+                    </font>
+                </p>
+            </div>
+
+            <!--Right Side of Portfolio Page-->
+            <div id="portfolio-right">
+                <p style="margin: 1% 1% 1% 30%">
+                    <font size="5">
+                        Educational
+                    </font>
+                </p>
+                <p id="portfolio-content" style="border-width:2px; border-style:solid; border-color: #ffe581; margin: 1% 25% 1% 1%; padding: .8em">
+                    <font size="4">
+                        <a>
+                            <img id="portfolio-images" style="vertical-align:middle" src="src/GitHub-Logo-64x64.png"></img>
+                        </a>
+                        Textbased Demon Game | Apr. 2022
+                        <br>
+                        • Languages utilized: Python
+                        <br>
+                        • A textbased game where a user would input movement commands by typing them into the game window.
+                        <br>
+                        • To achieve victory, a user needs to visit all the rooms except the room where the "demonlord" resides.
+                        <br>
+                        <br>
+                        <a>
+                            <img id="portfolio-images" style="vertical-align:middle" src="src/GitHub-Logo-64x64.png"></img>
+                        </a>
+                        Textbased Dog Game | May. 2020
+                        <br>
+                        • Languages utilized: Java
+                        <br>
+                        • A textbased game where a user would input movement commands by typing them into the game window.
+                        <br>
+                        • To achieve victory, a user needs to locate all the dog bones without digging up an oil pipe.
+                    </font>
+                </p>
+                <p style="margin: 1% 1% 1% 1%">
+                    <font size="2">
+                        *To protect the academic integrity of myself and others, the code behind educational projects will not be released through GitHub.
+                    </font>
+                </p>
+            </div>
+        </div>
     </div>
+
+    <!--Page Footer-->
+    <div class="footer">
+        <a class="padding" href="https://github.com/KingAscent" target="_blank">
+            <img class="footer-picture" src="src/GitHub-Logo-64x64.png"></img>
+        </a>
+        <a class="padding" href="https://www.linkedin.com/in/marvin-vincent-l-983650221" target="_blank">
+            <img class="footer-picture" src="src/LinkedIn-Logo.png"></img>
+        </a>
+        <p>GitHub | LinkedIn</p>
+    </div>
+
 </body>
 </html>
